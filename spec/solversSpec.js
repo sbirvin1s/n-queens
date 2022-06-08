@@ -2,7 +2,6 @@ describe('solvers', function() {
   window.displayBoard = function() {};
 
   describe('findNRooksSolution()', function() {
-
     it('finds a valid solution for n of 1-8', function() {
       _.range(1, 9).map(function(n) {
         var solutionBoard = new Board(findNRooksSolution(n));
@@ -11,7 +10,6 @@ describe('solvers', function() {
             return memo + col;
           }, 0);
         }, 0);
-
         expect(solutionBoard.get('n')).to.equal(n);
         expect(numPieces).to.equal(n);
         expect(solutionBoard.hasAnyRooksConflicts()).to.be.equal(false);
