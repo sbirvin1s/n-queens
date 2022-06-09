@@ -100,8 +100,6 @@
       return false;
     },
 
-
-
     // COLUMNS - run from top to bottom
     // --------------------------------------------------------------
     //
@@ -119,15 +117,6 @@
 
     // test if any columns on this board contain conflicts
     hasAnyColConflicts: function() {
-      // let board = this.rows();
-      // let cols = board[0].length;
-      // for (let i = 0; i < cols; i++) {
-      //   if (this.hasColConflictAt[i]) {
-      //     return true;
-      //   }
-      // }
-      // return false;
-
       var board = this.rows();
       var cols = board[0].length; //this.get('n')
       for (var i = 0; i < cols; i++) {
@@ -137,8 +126,6 @@
       }
       return false;
     },
-
-
 
     // Major Diagonals - go from top-left to bottom-right
     // --------------------------------------------------------------
